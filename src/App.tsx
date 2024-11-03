@@ -4,6 +4,8 @@ import { Typography, Box } from '@mui/material';
 import colors from './theme/colors';
 import Header from './components/Header';
 import Section from './components/Section';
+import Sidebar from './components/Sidebar';
+import CustomScrollbar from './components/CustomScrollbar';
 
 function App() {
     const scrollToSection = (id: string) => {
@@ -17,7 +19,7 @@ function App() {
         <div style={{ backgroundColor: colors.navy, minHeight: '100vh', color: colors.white }}>
             {/* Header */}
             <Header scrollToSection={scrollToSection} />
-
+            <CustomScrollbar />
             <Box
                 sx={{
                     display: 'flex',
@@ -47,6 +49,7 @@ function App() {
             <Section id="skills" backgroundColor={colors.navy} />
             <Section id="projects" backgroundColor={colors.navy} />
             <Section id="contact" backgroundColor={colors.navy} />
+            <Sidebar />
         </div>
     );
 }
