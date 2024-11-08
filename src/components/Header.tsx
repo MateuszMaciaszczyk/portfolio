@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
 
     const handleCVDownload = () => {
         const link = document.createElement('a');
-        link.href = '/path/to/CV.pdf'; // TODO: Add the path to CV
+        link.href = '/path/to/CV.pdf';                                                      // TODO: Add the path to CV
         link.download = 'MateuszMaciaszczyk-CV.pdf';
         document.body.appendChild(link);
         link.click();
