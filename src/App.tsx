@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar';
 import CustomScrollbar from './components/CustomScrollbar';
 import AboutMe from "./components/AboutMe";
 import Main from "./components/Main";
+import Experience from "./components/Experience";
 
 function App() {
     const scrollToSection = (id: string) => {
@@ -29,8 +30,8 @@ function App() {
             <CustomScrollbar />
             <Main />
             <AboutMe />
+            <Experience />
 
-            <Section id="experience" backgroundColor={colors.navy} />
             <Section id="skills" backgroundColor={colors.navy} />
             <Section id="projects" backgroundColor={colors.navy} />
             <Section id="contact" backgroundColor={colors.navy} />
