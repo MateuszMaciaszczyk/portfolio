@@ -109,7 +109,7 @@ const Experience: React.FC = () => {
                 <ToggleButton value="education" sx={{ color: colors.slate, '&.Mui-selected': { color: colors.green } }}>Education</ToggleButton>
 
                 <Typography variant="h3" sx={{ color: colors.white, fontSize: '2rem', mb: 1, marginLeft: '2rem' }}>
-                    {view === 'work' ? "Where I've Worked" : 'Where I Studied'}
+                    {view === 'work' ? "Where I've Worked" : "Where I've Studied"}
                 </Typography>
             </ToggleButtonGroup>
 
