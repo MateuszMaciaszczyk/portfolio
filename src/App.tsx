@@ -15,9 +15,8 @@ function App() {
         const element = document.getElementById(id);
         if (element) {
             const elementRect = element.getBoundingClientRect();
-            const offset = (window.innerHeight - elementRect.height) / 2;
             window.scrollTo({
-                top: elementRect.top + window.scrollY - offset,
+                top: elementRect.top + window.scrollY - 100, // Scroll to the exact top without any offset
                 behavior: 'smooth',
             });
         }
