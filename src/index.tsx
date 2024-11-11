@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -7,9 +7,29 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const handleVisibilityChange = () => {
+    if (document.hidden) {
+        document.title = 'Feel free to contact me!';
+    } else {
+        document.title = 'Mateusz Maciaszczyk';
+    }
+};
+
+const AppWithVisibilityChange = () => {
+    useEffect(() => {
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+        return () => {
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+        };
+    }, []);
+
+    return <App />;
+};
+
 root.render(
   <React.StrictMode>
-    <App />
+    <AppWithVisibilityChange />
   </React.StrictMode>
 );
 

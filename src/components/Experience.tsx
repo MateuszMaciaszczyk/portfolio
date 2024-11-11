@@ -78,7 +78,7 @@ const Experience: React.FC = () => {
     const handleViewChange = (event: React.MouseEvent<HTMLElement>, newView: string) => {
         if (newView) {
             setView(newView);
-            setSelectedIndex(0); // Reset selected index when switching
+            setSelectedIndex(0);
         }
     };
 
@@ -91,8 +91,9 @@ const Experience: React.FC = () => {
             sx={{
                 maxWidth: '60%',
                 margin: '0 auto',
-                marginTop: '12rem',
+                marginTop: '15rem',
                 color: colors.lightestSlate }}>
+
             <Typography variant="h4" sx={{ color: colors.green, marginBottom: '1rem' }}>
                 02. Experience
             </Typography>
@@ -103,7 +104,7 @@ const Experience: React.FC = () => {
                 value={view}
                 exclusive
                 onChange={handleViewChange}
-                sx={{ mb: 2, borderBottom: `5px solid ${colors.lightestNavy}` }}
+                sx={{ mb: 2, borderBottom: `0.3rem solid ${colors.lightestNavy}` }}
             >
                 <ToggleButton value="work" sx={{ color: colors.slate, '&.Mui-selected': { color: colors.green } }}>Work</ToggleButton>
                 <ToggleButton value="education" sx={{ color: colors.slate, '&.Mui-selected': { color: colors.green } }}>Education</ToggleButton>
@@ -115,7 +116,7 @@ const Experience: React.FC = () => {
 
             <Box sx={{ display: 'flex', gap: 2 }}>
                 {/* Left-side List */}
-                <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', borderLeft: `1px solid ${colors.lightestNavy}`, paddingLeft: 2 }}>
+                <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', borderLeft: `0.1rem solid ${colors.lightestNavy}`, paddingLeft: 2 }}>
                     {experienceList.map((item, index) => (
                         <Button
                             key={index}

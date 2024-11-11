@@ -4,18 +4,18 @@ import { Html, Css, Javascript, Coffee, GitHub } from '@mui/icons-material';
 import colors from '../theme/colors';
 
 const skills = [
-    { name: 'HTML5', icon: <Html fontSize="large" /> },
-    { name: 'Python', icon: <Coffee fontSize="large" /> },
-    { name: 'Java', icon: <Coffee fontSize="large" /> },
-    { name: 'CSS', icon: <Css fontSize="large" /> },
-    { name: 'SQL', icon: <Coffee fontSize="large" /> },
-    { name: 'Spring', icon: <Coffee fontSize="large" /> },
-    { name: 'JavaScript', icon: <Javascript fontSize="large" /> },
-    { name: 'AWS', icon: <Coffee fontSize="large" /> },
-    { name: 'Kubernetes', icon: <Coffee fontSize="large" /> },
-    { name: 'TypeScript', icon: <Coffee fontSize="large" /> },
-    { name: 'React', icon: <Coffee fontSize="large" /> },
-    { name: 'Git', icon: <GitHub fontSize="large" /> },
+    { name: 'HTML5', icon: <i className="devicon-html5-plain"></i>},
+    {name: 'Python', icon: <i className="devicon-python-plain"></i>},
+    {name: 'Java', icon: <i className="devicon-java-plain"></i>},
+    {name: 'CSS', icon: <i className="devicon-css3-plain"></i>},
+    {name: 'SQL', icon: <i className="devicon-azuresqldatabase-plain"></i>},
+    {name: 'Spring', icon: <i className="devicon-spring-plain"></i>},
+    {name: 'JavaScript', icon: <i className="devicon-javascript-plain"></i>},
+    {name: 'AWS', icon: <i className="devicon-amazonwebservices-plain-wordmark"></i>},
+    {name: 'Kubernetes', icon: <i className="devicon-kubernetes-plain"></i>},
+    {name: 'TypeScript', icon: <i className="devicon-typescript-plain"></i>},
+    {name: 'React', icon: <i className="devicon-react-plain"></i>},
+    {name: 'Git', icon: <i className="devicon-git-plain"></i>},
 ];
 
 const Skills: React.FC = () => {
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
             sx={{
                 maxWidth: '60%',
                 margin: '0 auto',
-                marginTop: '12rem',
+                marginTop: '20rem',
                 color: colors.lightestSlate }}>
             <Typography variant="h4" sx={{ color: colors.green, marginBottom: '1rem' }}>
                 03. Skills
@@ -46,8 +46,9 @@ const Skills: React.FC = () => {
                                 color: colors.slate,
                                 transition: 'transform 0.3s, box-shadow 0.3s',
                                 '&:hover': {
-                                    transform: 'scale(1.05)',
-                                    boxShadow: `0 4px 20px ${colors.green}`,
+                                    filter: 'grayscale(0%)',
+                                    transform: 'scale(1.07)',
+                                    boxShadow: `0 0.3rem 0.5rem ${colors.green}`,
                                 },
                             }}
                         >
