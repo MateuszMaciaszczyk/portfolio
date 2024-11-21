@@ -1,4 +1,3 @@
-// src/components/AboutMe.tsx
 import React from 'react';
 import { Box, Typography, Avatar, Divider } from '@mui/material';
 import colors from '../theme/colors';

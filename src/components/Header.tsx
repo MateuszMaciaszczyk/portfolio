@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import React, { useEffect, useState } from 'react';
 import { AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
 import colors from '../theme/colors';
