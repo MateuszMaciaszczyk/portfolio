@@ -50,29 +50,44 @@ const AboutMe: React.FC = () => {
             {/* Right Section: Avatar */}
             <Box
                 sx={{
+                    position: 'relative',
                     maxWidth: '27%',
                     marginTop: '5rem',
-                    transition: 'transform 0.3s ease',
                     '&:hover': {
+                        mixBlendMode: 'normal',
+                        filter: 'none',
                         transform: 'translateY(-10px)',
                     },
-                }}>
-                <Avatar
-                    src={profileImage}
-                    alt="Profile"
+                }}
+            >
+                <Box
+                    className="avatar-container"
                     sx={{
-                        width: '100%',
-                        height: 'auto',
-                        borderRadius: '0.5rem',
+                        position: 'relative',
                         backgroundColor: colors.green,
+                        borderRadius: '0.5rem',
                         padding: '0.5rem',
-                        filter: 'grayscale(100%)',
-                        transition: 'filter 0.3s ease',
-                        '&:hover': {
-                            filter: 'none',
-                        },
+                        overflow: 'hidden',
                     }}
-                />
+                >
+                    <Avatar
+                        className="avatar-image"
+                        src={profileImage}
+                        alt="Profile"
+                        sx={{
+                            width: '100%',
+                            height: 'auto',
+                            borderRadius: '0.5rem',
+                            filter: 'grayscale(100%) contrast(1)',
+                            mixBlendMode: 'multiply',
+                            transition: 'filter 0.3s ease, mix-blend-mode 0.3s ease',
+                            '&:hover': {
+                                mixBlendMode: 'normal',
+                                filter: 'none',
+                            },
+                        }}
+                    />
+                </Box>
             </Box>
         </Box>
     );
