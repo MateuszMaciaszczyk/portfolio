@@ -1,7 +1,6 @@
 import React from 'react';
 import colors from './theme/colors';
 import Header from './components/Header';
-import Section from './components/Section';
 import Sidebar from './components/Sidebar';
 import CustomScrollbar from './components/CustomScrollbar';
 import AboutMe from "./components/AboutMe";
