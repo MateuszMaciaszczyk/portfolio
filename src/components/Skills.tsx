@@ -1,10 +1,9 @@
 import React from 'react';
 import {Box, Typography, Grid, Paper, Divider} from '@mui/material';
-import { Html, Css, Javascript, Coffee, GitHub } from '@mui/icons-material';
 import colors from '../theme/colors';
 
 const skills = [
-    { name: 'HTML5', icon: <i className="devicon-html5-plain"></i>},
+    {name: 'HTML5', icon: <i className="devicon-html5-plain"></i>},
     {name: 'Python', icon: <i className="devicon-python-plain"></i>},
     {name: 'Java', icon: <i className="devicon-java-plain"></i>},
     {name: 'CSS', icon: <i className="devicon-css3-plain"></i>},
