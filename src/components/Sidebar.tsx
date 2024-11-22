@@ -1,14 +1,12 @@
 import React from 'react';
 import { GitHub, Instagram, LinkedIn } from '@mui/icons-material';
-import XIcon from '@mui/icons-material/X';
 import { Box, IconButton, Link } from '@mui/material';
 import colors from '../theme/colors';
 
 const socialLinks = [
     { href: 'https://github.com/MateuszMaciaszczyk', icon: <GitHub /> },
-    { href: 'https://www.instagram.com/mateusz_maciaszczyk/', icon: <Instagram /> },
-    { href: 'https://x.com/Mateusz11748442', icon: <XIcon /> },
     { href: 'https://www.linkedin.com/in/mateusz-maciaszczyk-5621542b8/', icon: <LinkedIn /> },
+    { href: 'https://www.instagram.com/mateusz_maciaszczyk/', icon: <Instagram /> },
 ];
 
 const Sidebar: React.FC = () => {

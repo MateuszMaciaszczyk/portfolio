@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                     '& span': { color: colors.green },
                 }}
             >
-                © Designed and developed by <span>Mateusz Maciaszczyk</span>
+                © Developed by <span>Mateusz Maciaszczyk</span>
             </Typography>
         </Box>
     );
