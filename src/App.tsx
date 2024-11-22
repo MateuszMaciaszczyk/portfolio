@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
     const scrollToSection = (id: string) => {
@@ -33,8 +34,7 @@ function App() {
             <Experience />
             <Skills />
             <Projects />
-
-            <Section id="contact" backgroundColor={colors.navy} />
+            <Contact />
             <Sidebar />
             <Footer />
         </div>
