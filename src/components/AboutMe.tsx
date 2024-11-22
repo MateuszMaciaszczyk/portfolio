@@ -51,13 +51,8 @@ const AboutMe: React.FC = () => {
             <Box
                 sx={{
                     position: 'relative',
-                    maxWidth: '27%',
+                    maxWidth: '25%',
                     marginTop: '5rem',
-                    '&:hover': {
-                        mixBlendMode: 'normal',
-                        filter: 'none',
-                        transform: 'translateY(-10px)',
-                    },
                 }}
             >
                 <Box
@@ -78,13 +73,6 @@ const AboutMe: React.FC = () => {
                             width: '100%',
                             height: 'auto',
                             borderRadius: '0.5rem',
-                            filter: 'grayscale(100%) contrast(1)',
-                            mixBlendMode: 'multiply',
-                            transition: 'filter 0.3s ease, mix-blend-mode 0.3s ease',
-                            '&:hover': {
-                                mixBlendMode: 'normal',
-                                filter: 'none',
-                            },
                         }}
                     />
                 </Box>

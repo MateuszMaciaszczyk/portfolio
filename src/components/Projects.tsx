@@ -36,7 +36,7 @@ const projects = [
     {
         name: 'Database Project',
         description: 'An database project made for university classes. The project was about creating a database\n' +
-        'for a fictional school. The database was designed to store information about employees, classes and courses\n',
+            'for a fictional school. The database was designed to store information about employees, classes and courses\n',
         technologies: ['MySQL'],
         image: database,
     },
@@ -59,8 +59,17 @@ const Projects: React.FC = () => {
 
             <Grid container spacing={5}>
                 {projects.map((project, index) => (
-                    <Grid container item xs={12} spacing={3} key={index} marginTop='3rem' alignItems={'center'} >
-                        {/* Project Image on the Left */}
+                    <Grid
+                        container
+                        item
+                        xs={12}
+                        spacing={3}
+                        key={index}
+                        marginTop="3rem"
+                        alignItems={'center'}
+                        direction={index % 2 === 0 ? 'row' : 'row-reverse'}
+                    >
+                        {/* Project Image */}
                         <Grid item xs={12} md={6}>
                             <Box
                                 component="img"
@@ -83,13 +92,9 @@ const Projects: React.FC = () => {
                             />
                         </Grid>
 
-                        {/* Project Details on the Right */}
+                        {/* Project Details */}
                         <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
-                            <Box
-                                sx={{
-                                    width: '100%',
-                                }}
-                            >
+                            <Box sx={{ width: '100%' }}>
                                 {/* Project Title */}
                                 <Typography
                                     variant="h5"
