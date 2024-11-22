@@ -23,14 +23,11 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
 
     if (!showHeader) return null;
 
-    const handleCVDownload = () => {
-        const link = document.createElement('a');
-        link.href = '/MateuszMaciaszczyk-CV.pdf';
-        link.download = 'MateuszMaciaszczyk-CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+    const handleCVView = () => {
+        const url = '/MateuszMaciaszczyk-CV.pdf';
+        window.open(url, '_blank');
     };
+
 
     const isAtTop = lastScrollY === 0;
 
@@ -88,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
                     ))}
                     <Button
                         color="inherit"
-                        onClick={handleCVDownload}
+                        onClick={handleCVView}
                         sx={{
                             textTransform: 'none',
                             color: colors.green,
