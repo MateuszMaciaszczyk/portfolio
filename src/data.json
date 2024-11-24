@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio",
+      "description": "A web application that allows users to get to know me and explore my projects, built using React and TypeScript. The project involved creating an accessible user interface, optimizing performance, and implementing a responsive design.",
+      "technologies": [
+        "React",
+        "TypeScript"
+      ],
+      "image": "portfolio"
+    },
+    {
+      "name": "Workout Tracker",
+      "description": "This web application is a tool that helps users organize, monitor and track their workouts and progress in sports. The application allows users to create personalized training plans, track their workouts and updating the number of current sets and repetitions. It also tracks the user's progress in given exercises.",
+      "technologies": [
+        "HMTL",
+        "CSS",
+        "JavaScript",
+        "Java",
+        "Spring",
+        "MySQL"
+      ],
+      "image": "workout"
+    },
+    {
+      "name": "Darwin World",
+      "description": "An application simulating the game of life. It's a simulation creating an evolving ecosystem where creatures roam, forage, and reproduce in plains and jungles. The environment, creatures' genes, and behaviors are configurable, allowing users to run and visualize dynamic simulations.",
+      "technologies": [
+        "Java",
+        "JavaFX"
+      ],
+      "image": "darwin"
+    },
+    {
+      "name": "Database Project",
+      "description": "An database project made for university classes. The project was about creating a database for a fictional school. The database was designed to store information about employees, classes and courses.",
+      "technologies": [
+        "MySQL"
+      ],
+      "image": "database"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Haering",
+      "role": "SWE Intern",
+      "duration": "Jul 2023 - Sep 2023",
+      "details": [
+        "During the job my task was to create backup management system and database using Java and PostgreSQL. This program allows users to commission a backup on a specific computer and this program will automatically place a task in Jira. After backup is done user input information about it such as date, storage location, etc. This program aims to optimize the process of safeguarding critical data on computers."
+      ]
+    },
+    {
+      "company": "Haering",
+      "role": "Technical Support",
+      "duration": "Jul 2022 - Sep 2022",
+      "details": [
+        "I was responsible for diagnosing and resolving IT issues, supporting end users with hardware, software, and network-related problems. I registered each ticket in the ticketing system, allowing me to effectively manage requests and ensure timely resolution. I assisted users with varying levels of technical knowledge, providing clear instructions and creating guides to help address common issues. I collaborated with IT teams on more complex cases and monitored infrastructure to prevent future disruptions."
+      ]
+    }
+  ],
+  "educationExperience": [
+    {
+      "institution": "AGH",
+      "degree": "BSc in Computer Science",
+      "duration": "Oct 2022 - Present",
+      "details": [
+        "Studying computer science at AGH, I am learning both the theoretical foundations and practical aspects of programming, algorithms, and database management. I explore topics related to application programming, operating systems, and artificial intelligence, giving me a comprehensive understanding of the IT industry. The studies enhance my analytical thinking and problem-solving skills, as well as provide experience in team collaboration on IT projects. This prepares me well for the challenges of the dynamic IT environment and allows me to better align my skills with market needs."
+      ]
+    },
+    {
+      "institution": "I LO in Piotrkow Trybunalski",
+      "degree": "Math-IT profile",
+      "duration": "Sep 2019 - Jun 2022",
+      "details": [
+        "I gained a solid foundation in mathematics and computer science. I learned to create websites, exploring technologies such as HTML, CSS, and basic JavaScript. The classes enhanced my creativity and programming skills, while also allowing me to apply mathematical theories to solving IT problems. This period provided me with the fundamental knowledge for further development in the field of IT."
+      ]
+    }
+  ]
+}
