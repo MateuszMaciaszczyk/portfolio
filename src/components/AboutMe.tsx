@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
                 </Typography>
                 <Divider sx={{ marginBottom: '1.5rem', backgroundColor: colors.lightestSlate, opacity: 0.3 }} />
                 <Typography paragraph sx={{ marginBottom: '1rem' }}>
-                    Hello! My name is Mateusz and I'm CS student at AGH UST in Cracow.
+                    elo elo Hello! My name is Mateusz and I'm CS student at AGH UST in Cracow.
                 </Typography>
                 <Typography paragraph sx={{ marginBottom: '1rem' }}>
                     I’ve always been fascinated by technology – by how coding can shape reality. At AGH, I discovered
