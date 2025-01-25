@@ -9,12 +9,16 @@ import portfolio from '../images/portfolio.png';
 import workout from '../images/workout.png';
 import darwin from '../images/darwin.png';
 import database from '../images/database.png';
+import scheduler from '../images/scheduler.png';
+import fintrack from '../images/fintrack.png';
 
 const imageMapping: Record<string, string> = {
     portfolio: portfolio,
     workout: workout,
     darwin: darwin,
     database: database,
+    scheduler: scheduler,
+    fintrack: fintrack,
 };
 
 const Projects: React.FC = () => {
@@ -22,7 +26,7 @@ const Projects: React.FC = () => {
         <Box
             id="projects"
             sx={{
-                maxWidth: '70%',
+                maxWidth: '60%',
                 margin: '0 auto',
                 marginTop: '15rem',
             }}

@@ -24,8 +24,14 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
     if (!showHeader) return null;
 
     const handleCVView = () => {
-        const url = '/MateuszMaciaszczyk-CV.pdf';
-        window.open(url, '_blank');
+        const url = '/Mateusz-Maciaszczyk-CV.pdf';
+        window.open(url, '_blank')
+        // const link = document.createElement('a');
+        // link.href = url;
+        // link.download = 'Mateusz-Maciaszczyk-CV.pdf';
+        // document.body.appendChild(link);
+        // link.click();
+        // document.body.removeChild(link);
     };
 
 

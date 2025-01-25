@@ -10,7 +10,7 @@
       "image": "portfolio"
     },
     {
-      "name": "Workout Tracker",
+      "name": "FitTracker",
       "description": "This web application is a tool that helps users organize, monitor and track their workouts and progress in sports. The application allows users to create personalized training plans, track their workouts and updating the number of current sets and repetitions. It also tracks the user's progress in given exercises.",
       "technologies": [
         "HMTL",
@@ -18,9 +18,36 @@
         "JavaScript",
         "Java",
         "Spring",
-        "MySQL"
+        "MySQL",
+        "Docker"
       ],
       "image": "workout"
+    },
+    {
+      "name": "MedScheduler",
+      "description": "A web application that allows users to easily book and manage doctor appointments, ensuring they never miss a scheduled visit. It provides features to modify, cancel, or reschedule appointments, while also offering reminders and a personal dashboard to track upcoming appointments and medical history.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "image": "scheduler"
+    },
+    {
+      "name": "FinTrack",
+      "description": "IN PROGRESS - This web application helps users track and manage their investments in real time, providing a clear overview of their portfolio’s performance. Users can add various types of investments such as stocks, bonds, and mutual funds, and the app automatically tracks their value, profit, and loss over time. Key features include interactive charts for visualizing investment growth.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Python",
+        "Django",
+        "MongoDB",
+        "Docker"
+      ],
+      "image": "fintrack"
     },
     {
       "name": "Darwin World",
